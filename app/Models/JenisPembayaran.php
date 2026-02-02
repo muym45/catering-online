@@ -7,20 +7,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class JenisPembayaran extends Model
 {
-    //
     use HasFactory;
 
-    protected $table = 'jenis_pembayaran';
+    protected $table = 'jenis_pembayarans';
 
     protected $fillable = [
         'metode_pembayaran',
     ];
 
-    public function detailJenis(){
+    public function detailJenis()
+    {
         return $this->hasMany(DetailJenisPembayaran::class, 'id_jenis_pembayaran');
     }
 
-    public function pemesanans(){
+    public function pemesanans()
+    {
         return $this->hasMany(Pemesanan::class, 'id_jenis_bayar');
     }
 }
