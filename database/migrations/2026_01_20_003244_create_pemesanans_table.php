@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pemesanans', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_pelanggan')->constrained('pelanggans')->cascadeOnDelete();
-            $table->foreignId('id_jenis_bayar')->constrained('jenis_pembayaran')->cascadeOnDelete();
+            $table->foreignId('id_jenis_bayar')->constrained('jenis_pembayarans')->cascadeOnDelete();
             $table->string('no_resi',30)->nullable();
             $table->dateTime('tgl_pesan');
             $table->enum('status_pesan',['Menunggu Konfirmasi','Sedang Proses','Menunggu Kurir']);

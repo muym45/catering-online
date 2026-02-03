@@ -12,6 +12,6 @@ Route::get('/', function () {
 
 // === API-like web routes (tanpa view dulu) ===
 Route::resource('pelanggans', PelangganController::class);
-Route::resource('pemesanans', PemesananController::class);
+
 Route::resource('detail-pemesanans', DetailPemesananController::class);
 Route::resource('pengirimans', PengirimanController::class);

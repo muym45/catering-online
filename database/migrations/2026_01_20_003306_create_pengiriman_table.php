@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pengiriman', function (Blueprint $table) {
+        Schema::create('pengirimans', function (Blueprint $table) {
             $table->id();
             $table->dateTime('tgl_kirim');
             $table->dateTime('tgl_tiba')->nullable();

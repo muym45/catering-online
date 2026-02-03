@@ -13,7 +13,7 @@ class DetailJenisPembayaran extends Model
     protected $table = 'detail_jenis_pembayarans';
 
     protected $fillable = [
-        'id_jenis_pembayarans',
+        'id_jenis_pembayaran',
         'no_rek',
         'tempat_bayar',
         'logo',

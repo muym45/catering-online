@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('detail_jenis_pembayarans', function (Blueprint $table) {
             $table->id();
-            $table->foreignID('id_jenis_pembayaran')->constrained('jenis_pembayaran')->cascadeOnDelete();
+            $table->foreignID('id_jenis_pembayaran')->constrained('jenis_pembayarans')->cascadeOnDelete();
             $table->string('no_rek',25);
             $table->string('tempat_bayar',50);
             $table->string('logo')->nullable();
